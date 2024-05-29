@@ -179,14 +179,17 @@ body{
 
 @media (max-width: 768px) {
     .headerForm {
-        margin-left: 0;
+        margin-left: auto;
         display: block; /* Kichik ekranlarda ustunlarni ustma-ust joylashtirish */
       
         
    
     }
+    .telnameForm{
+        margin-left: auto;
+    }
     .tjfphoto{
-        
+        margin-left: 50px;
     }
     .tjimg {
        
