@@ -1,0 +1,200 @@
+body{
+    /* background-image: url(/img/Wirefra.jpg); */
+    background-image: url(/img/originback.svg);
+    background-size: cover; /* Rasm o'lchamini butun ekran bilan moslashtiradi */
+  background-position: center; /* Rasm markazdan joylashtiriladi */
+  background-repeat: no-repeat;
+}
+
+
+
+/* Nav header */
+.container {
+    height: 100px; /* Belgilangan balandlikni ta'minlash */
+  }
+  
+  .logo img {
+    display: block; /* Img tagini to'g'ri ko'rinishda ta'minlash */
+    max-width: 100%; /* Responsivlik uchun */
+    height: auto; /* Asl nisbatni saqlab qolish */
+  }
+  
+  .language {
+    color: #D3AE6F; /* Siz tanlagan rang */
+    text-decoration: none; /* Pastki chiziqni yo'qotish */
+    font-size: 3rem; /* Harf o'lchamini oshirish */
+  }
+  
+  /* Mobil qurilmalar uchun maxsus stil */
+  @media (max-width: 768px) {
+    .container {
+        margin: 0;
+      align-items: center; 
+      justify-content: center;
+      text-align: center; /* Har bir elementni markazga joylashtirish */
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .logo img {
+        display: block; /* Img tagini to'g'ri ko'rinishda ta'minlash */
+        max-width: 60%; /* Responsivlik uchun */
+        height: auto; /* Asl nisbatni saqlab qolish */
+        
+      }
+    .language {
+      margin-top: 0px; /* Til linki va logotip orasidagi bo'shliq */
+      font-size: 1.8rem;
+    }
+  }
+  
+  .full-width {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Maxsus margin top qo'shish */
+
+
+/* Responsive qilish uchun media query */
+@media (max-width: 768px) {
+    .Nav-containerr {
+        bottom: 100px;
+        flex-direction: column; /* Kichik ekranlarda ustunlarni ustma-ust joylashtirish */
+        text-align: center; /* Kichik ekranlarda elementlarni markazga joylashtirish */
+    }
+
+    .Vector-logo {
+        width: 80%; /* Kichik ekranlarda logo kengligini sozlash */
+        margin: 0 auto; /* Kichik ekranlarda logo markazlash */
+    }
+
+    .full-width {
+        max-width: 100%; /* Rasmni ekran chegarasiga yetmasligini ta'minlash */
+    }
+}
+
+  
+  
+/* Nav content + */
+.fontText{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.font-element{
+    color: #FAE298;
+    font-size: 30px;    
+}
+
+@media (max-width: 768px) {
+
+    .fontText{
+       width: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+
+    .font-element{
+        color: #FAE298;
+        font-size: 15px;
+        
+    }
+
+    
+}
+
+
+
+
+/* Header Form */
+
+.headerForm{
+    display: flex;
+    width: 1200px;
+    margin: auto;
+   
+    
+}
+.telnameForm{
+   align-items: center;
+   margin-left: 100px;
+}
+
+.tjfphoto{
+    background-image: url(/img/starts.svg);
+}
+
+.tel-forma{
+    margin-right: 0;
+    border-radius: 25px;
+    height: 60px;
+    width: 350px;
+}
+.name-forma{
+    border-radius: 25px;
+    width: 350px;
+    height: 60px;
+}
+
+.formButton {
+    font-weight: 500;
+    border-radius: 25px;
+    height: 55px;
+    width: 350px;
+    background-color: hsl(36, 59%, 58%); /* Yorqinlikni 10% ga oshirdik */
+
+    color: rgb(0, 0, 0); /* Matnning oq rangi */
+    padding: 15px 30px; /* Ichki bo'shliq */
+    border: none; /* Chekkalarni olib tashlash */
+    border-radius: 30px; /* Chekkalarni yumaloqlashtirish */
+    font-size: 16px; /* Shrfit o'lchami */
+    cursor: pointer; /* Mushta ko'rsatkichni ko'rsatish */
+    box-shadow: 1px 1px 1px 1px #B78B32; /* Yumshoq soya effekti */
+    transition: all 0.3s ease; /* Bosilganda animatsiya effekti */
+}
+
+.formButton:hover {
+    background-color: #af8c2c; /* Tugmani bosganda rangini o'zgartirish */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bosilganda soya effektini oshirish */
+}
+
+.formButton:active {
+    background-color: #9c7a26; /* Tugmani bosib turganda rangini o'zgartirish */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bosib turganda soya effektini pasaytirish */
+}
+
+
+@media (max-width: 768px) {
+    .headerForm {
+        margin-left: 0;
+        display: block; /* Kichik ekranlarda ustunlarni ustma-ust joylashtirish */
+      
+        
+   
+    }
+    .tjfphoto{
+        
+    }
+    .tjimg {
+       
+     width: 300px;
+     height:auto;
+    }
+
+    .formButton {
+        max-width: 100%; /* Rasmni ekran chegarasiga yetmasligini ta'minlash */
+    }
+}
