@@ -176,10 +176,18 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bosib turganda soya effektini pasaytirish */
 }
 
-
+.formText{
+        
+    text-align: center;
+    color: #D3AE6F;
+     font-size: 15px; 
+     width: 300px; 
+   
+}
 @media (max-width: 768px) {
     .headerForm {
-        margin-left: auto;
+        width: auto;
+       margin: auto;
         display: block; /* Kichik ekranlarda ustunlarni ustma-ust joylashtirish */
       
         
@@ -201,11 +209,11 @@ body{
         
         border-radius: 25px;
         height: 40px;
-        width: 250px;
+        width: 300px;
     }
     .name-forma{
         border-radius: 25px;
-        width: 250px;
+        width: 300px;
         height: 40px;
     }
 
@@ -214,7 +222,7 @@ body{
         font-weight: 500;
         border-radius: 25px;
         height: 40px;
-        width: 250px;
+        width: 300px;
         background-color: hsl(36, 59%, 58%); /* Yorqinlikni 10% ga oshirdik */
         display: flex;
         justify-content: center;
@@ -246,7 +254,73 @@ body{
         color: #D3AE6F;
          font-size: 15px; 
          width: 300px; 
-         /* margin-left: 30px; */
+         margin: auto;
     }
+
+}
+
+
+/* <!-- header time --> */
+.headert{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FAE298; /* Matn rangi */
+    font-family: Arial, sans-serif; /* Shrift */
+    
+    padding: 10px;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+ 
+}
+
+.number {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 20px;
+}
+
+
+.timefont{
+    font-size: 35px;
+    color: #D3AE6F;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+
+    .timefont{
+        font-size:20px;
+    }
+
+    .label {
+        font-size: 15px;
+    }
+
+    .number {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    
 
 }
