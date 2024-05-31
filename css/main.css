@@ -130,7 +130,7 @@ body{
 }
 .telnameForm{
    align-items: center;
-   margin-left: 100px;
+   /* margin-left: 100px; */
 }
 
 .tjfphoto{
@@ -189,20 +189,27 @@ body{
         width: auto;
        margin: auto;
         display: block; /* Kichik ekranlarda ustunlarni ustma-ust joylashtirish */
+        justify-content: center;
       
         
    
     }
     .telnameForm{
-        margin-left: 50px;
+        display: flex;
+        flex-direction: column; /* Agar elementlar vertikal yo'nalishda joylashgan bo'lsa */
+        align-items: center;    /* Gorizontal markazlash */
+        justify-content: center; /* Vertikal markazlash */
     }
+    
     .tjfphoto{
         margin-left:50px;
     }
     .tjimg {
        
-     width: 300px;
-     height:auto;
+        display: block; /* Kichik ekranlarda ustunlarni ustma-ust joylashtirish */
+        justify-content: center;
+     width: 100%;
+     height:100%;
     }
 
     .tel-forma{
