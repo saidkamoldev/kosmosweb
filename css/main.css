@@ -340,6 +340,7 @@ body{
 /* <!-- Heder img text --> */
 
 .vertor-tex{
+    text-align: center;
     width: auto;
   margin: 50px auto auto auto;
 }
@@ -841,4 +842,74 @@ input, .submit-button {
         align-items: start;
         margin-top: 30px;
        }
+   }
+
+
+
+
+
+
+   /* feedback */
+
+   .feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 1200px;
+    font-weight: 300;
+    color: #D3AE6F;
+    
+    margin:60px auto auto auto;
+   }
+
+
+   .feedback-items{
+
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;  
+    font-size: 21px;
+    font-weight: 400;
+   }
+
+   .feedback-items img{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+   } 
+ 
+   .feedback-items h3{
+  margin-left: 10px;
+   }
+   .feedback-items h4{
+    margin-left: 10px;
+     }
+
+
+   @media (max-width: 768px) {
+    .feedback{
+        width: auto;
+        font-weight: 300;
+        color: #D3AE6F;
+       
+        margin:10px auto auto auto;
+       }
+    
+
+       .feedback-items h3{
+
+        display: flex;
+        margin: auto;
+        font-family: "Montserrat", sans-serif;  
+        font-size: 15px;
+        font-weight: 400;
+       }
+
+       .feedback-items img{
+        width: 15px;
+        height: 15px;
+        margin: 5px 10px auto 20px;
+       } 
    }
