@@ -793,6 +793,7 @@ input, .submit-button {
 
        .clentstextcon{
         margin-top: 20px;
+        margin: auto;
         display: flex;
         flex-direction: column ;
        }
@@ -814,13 +815,17 @@ input, .submit-button {
         margin: unset;
         font-family: "Montserrat", sans-serif;
         font-size: 15px !important;
+        
        }
     
        .clentscon{
+        display: flex;
+        flex-direction: column;
         width: auto;
         margin:20px auto auto 10px;
        }
 
+      
        /* .clentsimg{
         font-family: "Montserrat", sans-serif;  
         font-size: 18px;
@@ -834,5 +839,6 @@ input, .submit-button {
 
        .clentsimg img{
         align-items: start;
+        margin-top: 30px;
        }
    }
