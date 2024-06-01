@@ -331,3 +331,365 @@ body{
     
 
 }
+
+
+
+
+
+
+/* <!-- Heder img text --> */
+
+.vertor-tex{
+    width: auto;
+  margin: 50px auto auto auto;
+}
+
+.vertor-tex h2{
+    color: #D3AE6F;
+    font-family:serif;
+    
+}
+.vertor-tex h2:last-child{
+    color: #D3AE6F;
+    font-family:serif;
+        font-weight: 900;
+    
+}
+/* .vertor-tex span{
+    color: #D3AE6F;
+    font-family:serif;
+} */
+
+@media (max-width: 768px) {
+
+    .vertor-tex{
+        
+        width: auto;
+      margin: 10px auto auto auto;
+    }
+
+   .vertor-tex h2{
+    font-size:15px;
+    
+   }
+   .vertor-tex h2:last-child{
+    color: #D3AE6F;
+    font-family:serif;
+        font-weight: 900;
+        margin-top: 0;
+        font-size:15px;
+    
+}
+
+}
+
+
+
+/* <!-- content  --> */
+
+.midContent{
+    width: 1200px;
+    margin: 50px auto auto auto;
+    color: #D3AE6F;
+}
+
+.midh1{
+    font-family: "Montserrat", sans-serif;  
+      width: 700px;
+    text-align: left;
+    font-size: 25px; 
+    font-weight: 700;
+}
+
+.midh2{
+    font-family: "Montserrat", sans-serif;  
+    margin-top: 50px;
+    text-align: left;
+    font-size: 25px; 
+}
+
+@media (max-width: 768px) {
+
+ .midContent{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+ }
+ .midh1{
+    margin: auto;
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;  
+      width: auto;
+    text-align: left;
+    font-size: 15px; 
+    font-weight: 700;
+}
+
+.midh2{
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;  
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px; 
+}
+
+ .midphoto{
+    margin: auto;
+ }
+
+}
+
+
+
+
+/* <!-- content text --> */
+
+.contentText{
+    width: 1200px;
+    margin: 50px auto auto auto;
+    color: #D3AE6F;
+}
+
+.contentText h2{
+    margin: auto;
+    font-family: "Montserrat", sans-serif;  
+      width: auto;
+    text-align: left;
+    font-size: 25px; 
+    /* font-weight:0; 70 */
+}
+
+.contentText h2:last-child{
+    margin: 30px auto auto auto;
+    font-family: "Montserrat", sans-serif;  
+    font-weight: 700;
+  
+}
+
+
+
+@media (max-width: 768px) {
+
+    .contentText{
+       width: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: auto;
+    }
+    .contentText h2{
+        margin-left: 10px;
+        font-family: "Montserrat", sans-serif;  
+        margin-top: 10px;
+        text-align: left;
+        font-size: 15px; 
+   
+   }
+
+   .contentText h2:last-child{
+    margin: 30px auto auto 10px;
+    font-family: "Montserrat", sans-serif;  
+    font-weight: 700;
+    font-size: 15px; 
+  
+}
+  
+   
+   }
+
+
+
+
+   /* <!-- mid about --> */
+
+
+   .midAbout{
+    width: 1200px;
+    margin: 50px auto auto auto;
+    color: #D3AE6F;
+   }
+   
+   .conAbout{
+    margin-top: 50px;
+   }
+
+   .conText h3{
+    text-align: left;
+    margin-left: 50px;
+    font-family: "Montserrat", sans-serif;  
+    font-size: 23px;
+    font-weight: 800;
+   }
+
+   .conText h3:last-child{
+    text-align: left;
+    margin-left: 50px;
+    font-family: "Montserrat", sans-serif;  
+    font-size: 21px;
+    font-weight: 400;
+   }
+
+
+   @media (max-width: 768px) {
+   
+    .midAbout{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto auto auto;
+
+    }
+
+    .conAbout{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+   
+    .conText h3{
+        text-align: center;
+        /* margin-top: 0; */
+        font-family: "Montserrat", sans-serif;  
+        font-size: 15px;
+        font-weight: 800;
+        margin:10px auto auto auto;
+       }
+    .conAbout img {
+        margin: 10px auto auto auto;
+    }
+    
+
+   .conText h3:last-child{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;  
+    font-size: 13px;
+    margin:5px auto auto auto;
+    font-weight: 400;
+   }
+
+  
+
+   }
+
+
+ .midContentext{
+    font-size:10px;
+    color: aliceblue;
+}
+
+   .midContentext{
+    margin: 60px auto auto auto;
+    font-size: 35px;
+    color: #D3AE6F;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+   @media (max-width: 768px) {
+
+    .midContentext{
+        margin: 40px;
+        font-size:18px;
+  
+    }
+
+   }
+
+
+
+ /* Button styling */
+.apply-button {
+    padding: 10px 20px;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+    display: flex;
+    align-items: center; /* Vertikal joylashish */
+    justify-content: center; /* Gorizontal joylashish */
+}
+
+.modal-content {
+    width: 500px; /* O'lchamni sozlash */
+    background: url(/img/originback.svg) center/cover no-repeat; /* Fon rasmi */
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: #D3AE6F; /* Agar fon rasmi qorong'i bo'lsa, matn oq rangda yaxshiroq ko'rinadi */
+    font-size: 15px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input, .submit-button {
+    width: 90%; /* Kengligi to'ldiradi */
+    padding: 10px;
+    height: 50px;
+    /* border-radius: 100px; */
+    margin-top: 10px;
+    border-radius: 5px; /* Chekkalarni yumaloqlashtirish */
+}
+
+.modal-content input {
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: transparent; /* Fonni shaffof qilish */
+    border: 1px solid #ccc; /* Chegarani ko'rsatish uchun */
+    padding: 10px 20px; /* Padding qo'shish */
+    width: calc(100% - 40px); /* To'liq kenglikdan 40px kamaytirish */
+    box-sizing: border-box; /* Padding va border o'lchamlarni ichiga oladi */
+}
+
+.modal-content button{
+    border-radius: 20px ;
+    margin-top: 20px;
+    background-color: hsl(36, 59%, 58%); /* Yorqinlikni 10% ga oshirdik */
+
+    color: rgb(0, 0, 0); /* Matnning oq rangi */
+
+    border: none; /* Chekkalarni olib tashlash */
+    border-radius: 30px; /* Chekkalarni yumaloqlashtirish */
+  
+    cursor: pointer; /* Mushta ko'rsatkichni ko'rsatish */
+    box-shadow: 1px 1px 1px 1px #B78B32; /* Yumshoq soya effekti */
+    transition: all 0.3s ease; /* Bosilganda animatsiya effekti */
+}
