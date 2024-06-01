@@ -582,6 +582,7 @@ body{
 
 
  .midContentext{
+    width: 1300px;
     font-size:10px;
     color: aliceblue;
 }
@@ -598,7 +599,8 @@ body{
    @media (max-width: 768px) {
 
     .midContentext{
-        margin: 40px;
+        margin: 20px auto auto 10px;
+        width: auto;
         font-size:18px;
   
     }
@@ -608,15 +610,25 @@ body{
 
 
  /* Button styling */
-.apply-button {
-    padding: 10px 20px;
-    background-color: gold;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
+ .apply-button {
+    margin-top: 50px;
+    padding: 10px 60px;  /* Tugma o'lchamlari */
+    background: linear-gradient(145deg, #FFD700, #FFA500);  /* Gradient orqali oltin rang effekti */
+    border: none;  /* Chegarani olib tashlash */
+    border-radius: 20px;  /* Chegaraning yumaloqligi */
+    color: black;  /* Yozuv rangi */
+    font-size: 16px;  /* Shrfit o'lchami */
+    font-weight: bold;  /* Shrfit qalinligi */
+    cursor: pointer;  /* Sichqoncha kursorni pointer ko'rinishiga o'zgartirish */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  /* Soyani qo'shish */
+    transition: all 0.3s ease;  /* Bosilganda animatsiya effekti */
 }
+
+.apply-button:hover {
+    background: linear-gradient(145deg, #FFA500, #FFD700);  /* Tugmani bosilganda rangini o'zgartirish */
+    box-shadow: 0 0 15px #FFA500;  /* Soyani kengaytirish va rangini o'zgartirish */
+}
+
 
 /* Modal styling */
 .modal {
@@ -693,3 +705,134 @@ input, .submit-button {
     box-shadow: 1px 1px 1px 1px #B78B32; /* Yumshoq soya effekti */
     transition: all 0.3s ease; /* Bosilganda animatsiya effekti */
 }
+
+
+@media (max-width: 768px) {
+
+    .apply-button{
+        margin-top: 10px;
+        padding: 10px 40px; 
+  
+    }
+
+   }
+
+
+
+
+
+   /* <!-- Clentss --> */
+
+   .clints{
+    width: 1200px;
+    font-family:serif;
+    font-weight: 300;
+    color: #D3AE6F;
+    text-align: left;
+    margin:40px auto auto auto;
+   }
+
+
+   .clints span{
+    font-family:serif;
+    font-weight: 700;
+    color: #D3AE6F;
+   }
+
+
+   
+   .clentscon{
+    width: 1200px;
+    margin:50px auto auto auto;
+   }
+   
+   .clentstextcon{
+    margin-top: 20px;
+    display: flex;
+   }
+   
+ 
+   .clentsimg{
+    font-family: "Montserrat", sans-serif;  
+    font-size: 18px;
+    color: #D3AE6F;
+   }
+
+   .clentsinter{
+    background-color: #D1DCDC;
+    margin: 80px auto auto 50px;
+    padding: 20px; /* Atrofida joy tashlash */
+    border-radius:  0px 40px 10px 40px; /* Har bir burchakka alohida radius */
+    font-size: 16px; /* Shrfit o'lchami */
+    line-height: 1.5; /* Matn chiziqlari orasidagi masofa */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5); /* Soyani qo'shish */
+    width: auto;
+   }
+   .clentsinter h2 {
+    color: #161919;
+    font-weight: 500;
+    margin:10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px !important;
+   }
+
+
+
+   @media (max-width: 768px) {
+
+    .clints{
+        width: auto;
+        font-family:serif;
+        font-weight: 300;
+        color: #D3AE6F;
+        text-align: left;
+        margin:30px auto auto 10px;
+        font-size: 18px;
+       }
+    
+
+       .clentstextcon{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column ;
+       }
+
+       .clentsinter{
+        background-color: #D1DCDC;
+        margin: 10px auto auto 10px;
+        padding: 20px; /* Atrofida joy tashlash */
+        border-radius: 0px 40px 10px 40px; /* Har bir burchakka alohida radius */
+        font-size: 16px; /* Shrfit o'lchami */
+        line-height: 1.5; /* Matn chiziqlari orasidagi masofa */
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.5); /* Soyani qo'shish */
+        width: 300px;
+       }
+
+       .clentsinter h2 {
+        color: #161919;
+        font-weight: 500;
+        margin: unset;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px !important;
+       }
+    
+       .clentscon{
+        width: auto;
+        margin:20px auto auto 10px;
+       }
+
+       /* .clentsimg{
+        font-family: "Montserrat", sans-serif;  
+        font-size: 18px;
+        color: #D3AE6F;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        
+        
+       } */
+
+       .clentsimg img{
+        align-items: start;
+       }
+   }
