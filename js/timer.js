@@ -17,7 +17,7 @@ function startTimer() {
         const now = new Date();
         const distance = endTime - now;
 
-        if (distance < 0) {
+        if   (distance < 0) {
             clearInterval(timer);
             document.getElementById("days").textContent = "00";
             document.getElementById("hours").textContent = "00";

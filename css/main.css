@@ -913,3 +913,90 @@ input, .submit-button {
         margin: 5px 10px auto 20px;
        } 
    }
+
+
+
+
+
+/* <!-- home about  --> */
+
+
+.conhome{
+    display: flex;
+    
+    justify-content: left;
+    width: 1200px;
+    font-weight: 300;
+    color: #D3AE6F;
+    
+    margin:60px auto auto auto;
+}
+
+
+
+.homecon1 h3{
+    text-align: left;
+    margin: 25px auto auto auto;
+    font-family: "Montserrat", sans-serif;  
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.homecon1 span{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;  
+    font-size: 25px;
+    margin:5px auto auto auto;
+    font-weight: 400;
+}
+
+.homecon2{
+    margin: auto auto auto 30px;
+}
+
+@media (max-width: 768px) {
+
+    .conhome{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: left; */
+        width: auto;
+        font-weight: 300;
+        color: #D3AE6F;
+        /* font-size: 15px; */
+        margin:30px auto auto auto;
+    }
+.homecon1{
+    align-items: center;
+    width: auto;
+}
+
+    .homecon1 h3{
+        text-align: center;
+        
+        margin: 15px auto auto auto;
+        font-family: "Montserrat", sans-serif;  
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .homecon1 span{
+        width: auto;
+        text-align: center;
+        margin: auto;
+        font-family: "Montserrat", sans-serif;  
+        font-size: 15px;
+        margin:5px auto auto auto;
+        font-weight: 400;
+    }
+    
+    .homecon2 img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
