@@ -956,6 +956,10 @@ input, .submit-button {
     margin: auto auto auto 30px;
 }
 
+.homecon2 img{
+margin: auto 20px auto auto;
+}
+
 @media (max-width: 768px) {
 
     .conhome{
@@ -1000,3 +1004,22 @@ input, .submit-button {
 
 
 
+.line {
+    display: flex;
+    justify-content: center;
+    margin: auto ;
+    height: 2px;  /* Chiziqning balandligi */
+    width: 1200px;  /* Chiziqning kengligi */
+    background-color: #D3AE6F;  /* Chiziqning rangi */
+}
+
+@media (max-width: 768px) {
+    .line {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto auto auto ;
+        height: 2px;  /* Chiziqning balandligi */
+        width: 90%;  /* Chiziqning kengligi */
+        background-color: #D3AE6F;  /* Chiziqning rangi */
+    }
+}
