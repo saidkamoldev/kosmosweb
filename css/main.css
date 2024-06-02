@@ -997,8 +997,9 @@ margin: auto 20px auto auto;
     }
     
     .homecon2 img{
-        width: 300px;
-        height: 300px;
+        margin-top: 20px;
+        width: 320px;
+        height: 250px;
     }
 }
 
@@ -1007,7 +1008,7 @@ margin: auto 20px auto auto;
 .line {
     display: flex;
     justify-content: center;
-    margin: auto ;
+    margin: 30px auto auto auto ;
     height: 2px;  /* Chiziqning balandligi */
     width: 1200px;  /* Chiziqning kengligi */
     background-color: #D3AE6F;  /* Chiziqning rangi */
@@ -1023,3 +1024,148 @@ margin: auto 20px auto auto;
         background-color: #D3AE6F;  /* Chiziqning rangi */
     }
 }
+
+
+
+/* <!-- midtext --> */
+
+.midinfotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    margin: 50px auto auto auto;
+
+}
+
+.midinfotext p {
+    line-height: 1.6; /* Qatorlar orasidagi masofa */
+    margin-top: 20px;
+    color: #D3AE6F;
+    font-family: "Montserrat", sans-serif;     
+     font-size: 23px;
+
+}
+
+
+@media (max-width: 768px) {
+    .midinfotext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 20px auto auto auto;
+    
+    }
+
+    .midinfotext p {
+        line-height: 1.6; /* Qatorlar orasidagi masofa */
+        margin-top: 10px;
+        color: #D3AE6F;
+        font-family: "Montserrat", sans-serif;     
+        font-size: 18px;
+    
+    }
+}
+
+
+.midbutton{
+
+}
+
+.midbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto auto auto;
+    padding: 10px 60px;  /* Tugma o'lchamlari */
+    background: linear-gradient(145deg, #FFD700, #FFA500);  /* Gradient orqali oltin rang effekti */
+    border: none;  /* Chegarani olib tashlash */
+    border-radius: 20px;  /* Chegaraning yumaloqligi */
+    color: black;  /* Yozuv rangi */
+    font-size: 16px;  /* Shrfit o'lchami */
+    font-weight: bold;  /* Shrfit qalinligi */
+    cursor: pointer;  /* Sichqoncha kursorni pointer ko'rinishiga o'zgartirish */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  /* Soyani qo'shish */
+    transition: all 0.3s ease;  /* Bosilganda animatsiya effekti */
+}
+
+.midbutton:hover {
+    background: linear-gradient(145deg, #FFA500, #FFD700);  /* Tugmani bosilganda rangini o'zgartirish */
+    box-shadow: 0 0 15px #FFA500;  /* Soyani kengaytirish va rangini o'zgartirish */
+}
+
+
+@media (max-width: 768px) {
+
+    .midbutton{
+        margin-top: 10px;
+        padding: 10px 40px; 
+  
+    }
+
+   }
+
+
+   /* shoptext */
+
+   .shoptext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    margin: 50px auto auto auto;
+   }
+
+   .shoptext p {
+    line-height: 1.6; /* Qatorlar orasidagi masofa */
+    margin-top: 20px;
+    color: #D3AE6F;
+    font-family: "Montserrat", sans-serif;     
+     font-size: 21px;
+   }
+
+   @media (max-width: 768px) {
+
+    .shoptext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 20px auto auto auto;
+    
+    }
+
+    .shoptext p {
+        line-height: 1.6; /* Qatorlar orasidagi masofa */
+        margin-top: 10px;
+        color: #D3AE6F;
+        font-family: "Montserrat", sans-serif;     
+        font-size: 18px;
+    
+    }
+
+   }
+
+
+
+   /* footer text */
+
+
+   .footh1{
+    width: auto;
+    text-align: center;
+    margin: 50px auto auto auto ;
+    color: #FAE298;
+    /* font-size: 30px;    */
+   }
+
+
+   @media (max-width: 768px) {
+    .footh1{
+        color: #FAE298;
+        font-size: 18px;
+        margin: 30px auto auto auto ;
+        
+    }
+   }
