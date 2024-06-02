@@ -1247,3 +1247,243 @@ margin: auto 10px auto auto;
 
 
 
+   .footh2{
+    width: auto;
+    text-align: center;
+    margin: 50px auto auto auto ;
+    color: #D3AE6F;
+    /* font-size: 30px;    */
+   }
+
+
+   @media (max-width: 768px) {
+    .footh2{
+        color: #D3AE6F;
+        font-size: 18px;
+        margin: 30px auto auto auto ;
+        
+    }
+   }
+
+
+   .footvariant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+   }
+
+   .footvariant h3 {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 25px auto auto auto;
+    font-family: "Montserrat", sans-serif;  
+    font-size: 25px;
+    font-weight: 700;
+    color: #D3AE6F;
+    width: 500px;
+   }
+
+ .footvariant span {
+    width: 300px;
+   text-align: center;
+   margin: auto;
+   font-family: "Montserrat", sans-serif;  
+   font-size: 23px;
+   margin:5px auto auto auto;
+   font-weight: 400;
+ }
+  
+
+
+ @media (max-width: 768px) {
+    
+    .footvariant{
+        
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            margin: 20px auto auto auto;
+            justify-content: center;
+        
+    }
+
+    .footvariant h3{
+        text-align: center;
+        width: auto;
+        margin: 15px auto auto auto;
+        font-family: "Montserrat", sans-serif;  
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .footvariant span {
+        width: auto;
+        text-align: center;
+        margin: auto;
+        font-family: "Montserrat", sans-serif;  
+        font-size: 15px;
+        margin:5px auto auto auto;
+        font-weight: 400;
+    }
+
+    }
+
+
+
+    /* <!-- footer txt --> */
+
+    .footertxt{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    margin: 50px auto auto auto;
+    }
+   .footertxt p {
+        text-align: center;
+        line-height: 1.6; /* Qatorlar orasidagi masofa */
+        margin-top: 20px;
+        color: #D3AE6F;
+        font-family: "Montserrat", sans-serif;     
+         font-size: 23px;
+    
+ 
+   }
+
+
+   @media (max-width: 768px) {
+    .footertxt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        margin: 20px auto auto auto;
+    }
+
+    .footertxt p {
+        line-height: 1.6; /* Qatorlar orasidagi masofa */
+        margin-top: 10px;
+        color: #D3AE6F;
+        font-family: "Montserrat", sans-serif;     
+        font-size: 18px;
+    }
+   }
+
+
+   /* maps */
+
+   .mapscon {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 20px auto;
+    width: 1200px; 
+}
+
+.yandex {
+    display: flex;
+    justify-content: start;
+    border-radius: 20px; /* Barcha chetlarini yumaloqlashtirish */
+    width:  600px;
+    height: 250px; /* Balandlik */
+    margin: auto auto auto 0; /* O'ng va chapdan avtomatik, pastki va tepadan 0 */
+    border-radius: 20px;
+}
+
+.yandex iframe {
+    width: 100%; /* Iframe ni to'liq kenglikka sozlash */
+    height: 250px; /* Balandlikni o'rnatish */
+    border: none; /* Chegarani olib tashlash */
+    border-radius: 20px; /* Iframe chegarasini yumaloqlashtirish */
+}
+
+   
+
+   .contact-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 10px 20px; /* Ichki bo'shliq */
+    font-family: Arial, sans-serif; /* Shrft */
+    font-size: 30px; /* Shrft o'lchami */
+}
+
+.contact-numbers p {
+    margin: 8px 0; /* Har bir qator orasidagi bo'shliq */
+    color: #D3AE6F; /* Telefon raqamlarining rangi */
+}
+
+.contact-numbers a {
+    color: #D3AE6F; /* Havolalar uchun rang */
+    text-decoration: none; /* Chiziq ostini olib tashlash */
+    font-weight: bold; /* Shrft qalinligi */
+}
+
+.bi-telephone-fill {
+    color: #D3AE6F; /* Telefon belgisi rangi */
+    margin-right: 10px; /* Telefon belgisidan keyingi bo'shliq */
+}
+
+
+
+@media (max-width: 768px) {
+
+    .mapscon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto 20px auto;
+        width: auto; 
+    }
+    .yandex{
+        width: 300px;
+        height: 250px;
+        margin: auto auto 0 auto;
+        
+    }
+    .contact-numbers {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin:0 auto auto auto;
+        padding: 10px 10px; /* Ichki bo'shliq */
+        font-family: Arial, sans-serif; /* Shrft */
+        font-size: 20px; /* Shrft o'lchami */
+    }
+
+    .contact-numbers p {
+        margin: 5px 0; /* Har bir qator orasidagi bo'shliq */
+        color: #D3AE6F; /* Telefon raqamlarining rangi */
+    }
+}
+
+
+
+footer {
+    background-color: #031601; /* Fon rangi */
+    color: #FFFFFF; /* Matn rangi */
+    padding: 20px; /* Ichki bo'shliqlar */
+    font-size: 12px; /* Shrft o'lchami */
+    line-height: 1.5; /* Qatorlar orasidagi masofa */
+    text-align: center; /* Markazga matn joylashuvi */
+}
+
+footer a {
+    color: #FFFFFF; /* Havolalar rangi */
+    text-decoration: none; /* Chiziq ostini olib tashlash */
+}
+
+footer p {
+    margin: 5px 0; /* Har bir qator orasidagi bo'shliq */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px; /* Kichikroq ichki bo'shliqlar */
+        font-size: 10px; /* Kichikroq shrift o'lchami */
+    }
+}
