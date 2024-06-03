@@ -754,7 +754,7 @@ input[type="tel"] {
   
     }
     .modal {
-        width: 90%; /* Kengroq o'rnatish */
+        width: auto; /* Kengroq o'rnatish */
         padding: 10px; /* Kamroq ichki yostiq */
         
         background: none;
