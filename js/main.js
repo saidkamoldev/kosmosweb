@@ -38,12 +38,12 @@ function closeVideo() {
     videoContainer.style.display = 'none';
 }
 
+
 document.addEventListener("DOMContentLoaded", function() {
     var iframe = document.getElementById('videoFrame');
     var src = iframe.getAttribute('src');
     iframe.setAttribute('src', src + (src.includes('?') ? '&' : '?') + 'autoplay=1&mute=1');
 });
-
 
 
 
