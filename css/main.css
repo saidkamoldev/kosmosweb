@@ -223,7 +223,7 @@ body{
         
         border-radius: 25px;
         height: 40px;
-        width: 300px;
+        width: 320px;
     }
     .name-forma{
         border-radius: 25px;
@@ -783,7 +783,7 @@ input[type="tel"] {
      }
  
 
-input[type="text"],
+
 input[type="tel"] {
     width: 100%; /* To'liq kenglikni egallash */
     padding: 10px;
@@ -792,6 +792,16 @@ input[type="tel"] {
     border-radius: 25px; /* Input maydonlarining burchaklarini yumaloqlashtirish */
    
     color: white; /* Matn rangi */
+}
+
+input[type="text"] {
+    width: 100%; /* To'liq kenglikni egallash */
+    padding: 10px;
+    margin: 10px 0; /* Yuqori va pastki chegaralar */
+    border: 1px solid #ccc; /* Chegara rangi */
+    border-radius: 25px; /* Input maydonlarining burchaklarini yumaloqlashtirish */
+   
+    color: white;
 }
 
 button.submit-button {
