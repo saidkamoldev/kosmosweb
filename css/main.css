@@ -453,6 +453,11 @@ body{
     margin: auto;
  }
 
+ .midphoto img{
+    width: 350px;
+    height: 250px;
+ }
+
 }
 
 
