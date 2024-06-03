@@ -1588,3 +1588,65 @@ footer p {
         font-size: 10px; /* Kichikroq shrift o'lchami */
     }
 }
+
+
+/* .fixed-video-container {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 300px; 
+    height: 600px;
+    z-index: 1000; 
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-radius: 5%;
+} */
+
+
+.fixed-video-container {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 300px; 
+    height: 500px;
+    z-index: 1000; 
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-radius: 5%;
+}
+
+.video-close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+@media (max-width: 768px) {
+    .fixed-video-container {
+        position: fixed; 
+        bottom: 20px; 
+        right: 20px; 
+        width: 100px; 
+        height: 150px;
+        z-index: 1000; 
+    
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        border-radius: 5%;
+    }
+    
+    .video-close-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    
+}

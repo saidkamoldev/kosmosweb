@@ -19,3 +19,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var closeButton = document.querySelector('.video-close-btn');
+    var videoContainer = document.getElementById('videoContainer');
+    var videoFrame = document.getElementById('videoFrame');
+
+    closeButton.addEventListener('click', function() {
+        videoFrame.src = ''; // Video manzilini o'chirish orqali to'xtatish
+        videoContainer.style.display = 'none'; // Videoni yopish
+    });
+});
