@@ -29,11 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function closeVideo() {
     var videoContainer = document.getElementById('videoContainer');
+    var videoFrame = document.getElementById('videoFrame');
+
+    // Video ijrosini to'xtatish
+    videoFrame.src = ""; // Bu video manzilini tozalaydi va shu tariqa videoni to'xtatadi
+
+    // Video oynasini yashirish
     videoContainer.style.display = 'none';
-    // Video to'xtatish
-    var iframe = document.getElementById('videoFrame');
-    iframe.src = iframe.src; // Reload the iframe to stop the video
-    
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -41,5 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var src = iframe.getAttribute('src');
     iframe.setAttribute('src', src + (src.includes('?') ? '&' : '?') + 'autoplay=1&mute=1');
 });
+
+
 
 
