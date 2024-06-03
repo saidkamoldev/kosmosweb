@@ -1,9 +1,10 @@
 body{
-    /* background-image: url(/img/Wirefra.jpg); */
-    background-image: url(/img/originback.svg);
-    background-size: cover; /* Rasm o'lchamini butun ekran bilan moslashtiradi */
-  background-position: center; /* Rasm markazdan joylashtiriladi */
-  background-repeat: no-repeat;
+    
+    /* background-image: url(/img/originback.svg);
+    background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; */
+  background-color: #04272E;
 }
 
 
