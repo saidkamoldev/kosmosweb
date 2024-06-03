@@ -53,8 +53,6 @@ body{
     height: auto;
 }
 
-
-
 /* Maxsus margin top qo'shish */
 
 
@@ -183,6 +181,7 @@ body{
     color: #D3AE6F;
      font-size: 15px; 
      width: 300px; 
+     margin-left: 30px;
    
 }
 .tjimg{

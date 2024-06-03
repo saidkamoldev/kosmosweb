@@ -34,7 +34,7 @@
           <img src="img/originlogo.svg" alt="Origin Logo" width="150" height="100">
         </div>
         <div>
-          <a class="language" href="">Ru</a>
+          <a class="language" href="indexRu.html">Ru</a>
         </div>
       </div>
 
@@ -342,16 +342,19 @@ document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById('modalForm');
     var closeButton = document.querySelector('.close');
     var applyButtons = document.querySelectorAll('.applyButton');
-    var input = document.querySelector("#phone_number1");
+    var contactForm = document.getElementById('contactForm');
+    var inputName = document.getElementById("name1");
+    var inputPhoneNumber = document.getElementById("phone_number1");
+    var phoneError = document.getElementById("phone-error1");
+    var phoneSuccess = document.getElementById("phone-success1");
 
-    var iti = window.intlTelInput(input, {
+    // International telephone input setup
+    var iti = window.intlTelInput(inputPhoneNumber, {
         initialCountry: "uz",
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
     });
 
-    input.addEventListener('input', function() {
-        var phoneError = document.getElementById("phone-error1");
-        var phoneSuccess = document.getElementById("phone-success1");
+    inputPhoneNumber.addEventListener('input', function() {
         if (iti.isValidNumber()) {
             phoneError.style.display = "none";
             phoneSuccess.style.display = "block";
@@ -361,15 +364,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
+    // Handling form submission
+    contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
-        if (iti.isValidNumber()) {
-            alert("Ariza qabul qilindi!");
-            input.value = "";
-            phoneSuccess.style.display = "none";
-        } else {
-            document.getElementById("phone-error1").style.display = "block";
+        if (!iti.isValidNumber()) {
+            phoneError.style.display = "block";
+            return;
         }
+
+        var data = {
+            name: inputName.value,
+            phone_number: iti.getNumber() // Get full international number
+        };
+
+        sendData(data); // Send data to server
+     
+
+        modal.style.display = 'none'; // Close the modal on successful submission
+        inputName.value = "";
+        inputPhoneNumber.value = "";
+        phoneSuccess.style.display = "none";
     });
 
     applyButtons.forEach(function(button) {
@@ -387,7 +401,22 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.style.display = 'none';
         }
     };
+
+        function sendData(data) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://admin.kosmostj.uz/client/', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    console.log("Server response:", xhr.responseText);
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+
+   
 });
+
 </script>
   
 
