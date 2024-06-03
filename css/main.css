@@ -416,6 +416,11 @@ body{
     font-size: 25px; 
 }
 
+.midphoto img{
+    width: 400px;
+    height: 380px;
+ }
+
 @media (max-width: 768px) {
 
  .midContent{
