@@ -717,7 +717,7 @@ input[type="tel"] {
     border: 1px solid #ccc; /* Chegara rangi */
     border-radius: 25px; /* Input maydonlarining burchaklarini yumaloqlashtirish */
     
-    color: white; /* Matn rangi */
+    color: rgb(0, 0, 0); /* Matn rangi */
 }
 
 .modal-content form {
@@ -791,7 +791,7 @@ input[type="tel"] {
     border: 1px solid #ccc; /* Chegara rangi */
     border-radius: 25px; /* Input maydonlarining burchaklarini yumaloqlashtirish */
    
-    color: white; /* Matn rangi */
+    color: rgb(0, 0, 0); /* Matn rangi */
 }
 
 input[type="text"] {
@@ -801,7 +801,7 @@ input[type="text"] {
     border: 1px solid #ccc; /* Chegara rangi */
     border-radius: 25px; /* Input maydonlarining burchaklarini yumaloqlashtirish */
    
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 button.submit-button {
