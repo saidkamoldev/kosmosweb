@@ -185,6 +185,10 @@ body{
      width: 300px; 
    
 }
+.tjimg{
+    width: 600px;
+    
+}
 @media (max-width: 768px) {
     .headerForm {
         width: auto;
@@ -203,13 +207,15 @@ body{
     }
     
     .tjfphoto{
-        margin-left:50px;
+        width: auto;
+      
+        margin: auto auto auto 30px;
     }
     .tjimg {
        
         display: block; /* Kichik ekranlarda ustunlarni ustma-ust joylashtirish */
         justify-content: center;
-     width: 100%;
+     width: 90%;
      height:100%;
     }
 
@@ -748,7 +754,7 @@ input[type="tel"] {
         display: flex;
         flex-direction: column; 
         justify-content: center;
-        width: 100%; /* O'lchamni sozlash 
+        width: auto; /* O'lchamni sozlash 
         background: url(/img/originback.svg) center/cover no-repeat; /* Fon rasmi */
         padding: 20px;
         /* margin-top: 50px; */
@@ -1536,6 +1542,7 @@ margin: auto 10px auto auto;
 
 
 footer {
+    width: auto;
     background-color: #031601; /* Fon rangi */
     color: #FFFFFF; /* Matn rangi */
     padding: 20px; /* Ichki bo'shliqlar */
@@ -1556,6 +1563,7 @@ footer p {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     footer {
+        width: auto;
         padding: 10px; /* Kichikroq ichki bo'shliqlar */
         font-size: 10px; /* Kichikroq shrift o'lchami */
     }
