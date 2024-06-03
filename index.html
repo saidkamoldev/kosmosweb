@@ -309,23 +309,57 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- clent  -->
 
 <!-- Button -->
-<button id="applyButton" class="apply-button">Ariza Qoldirish</button>
+<button class="applyButton midbutton">Ariza Qoldirish</button>
 
 </div>
 
 <!-- Modal Form, initially hidden -->
+
 <div id="modalForm" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h1>"Kosmos" turar-joy majmuasidan eksklyuziv narxda o'z kvartirangizga ega bo'lish imkoniyatini qo'ldan boy bermang - orzuyingizdagi uy sizni kutmoqda!</h1>
+        <h1 style="text-align: center;">"Kosmos" turar-joy majmuasidan eksklyuziv narxda o'z kvartirangizga ega bo'lish imkoniyatini qo'ldan boy bermang - orzuyingizdagi uy sizni kutmoqda!</h1>
         <form>
-            <input type="text" placeholder="Ism Sharifingiz" id="name">
-            <!-- Telefon raqamining inputi -->
-            <input type="tel" placeholder="Telefon Raqamingiz" id="phone_number" required>
+            <input type="text" placeholder="Ism Sharifingiz" id="name1">
+            <input type="tel" placeholder="Telefon Raqamingiz" id="phone_number1" required>
+            <div id="phone-error1" class="error">Noto'g'ri format kiritingiz, iltimos to'g'ri format kiriting.</div>
+            <div id="phone-success1" class="success">To'g'ri format!</div>
             <button type="submit" class="submit-button">Ariza Qoldirish</button>
         </form>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+    const setupIntlTelInput = (inputId, errorId, successId) => {
+        var input = document.querySelector("#" + inputId);
+        var iti = window.intlTelInput(input, {
+            initialCountry: "uz",
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        });
+
+        input.addEventListener('input', function() {
+            var phoneError = document.getElementById(errorId);
+            var phoneSuccess = document.getElementById(successId);
+            if (iti.isValidNumber()) {
+                phoneError.style.display = "none";
+                phoneSuccess.style.display = "block";
+            } else {
+                phoneError.style.display = "block";
+                phoneSuccess.style.display = "none";
+            }
+        });
+    };
+
+    // Har bir input uchun intlTelInputni o'rnatish
+    setupIntlTelInput("phone_number1", "phone-error1", "phone-success1");
+    setupIntlTelInput("phone_number2", "phone-error2", "phone-success2");
+    // Agar ko'proq formalar bo'lsa, shu tarzda davom ettirishingiz mumkin
+});
+
+        </script>
     </div>
-</div> 
+</div>
+
+
 
 
 
@@ -522,7 +556,7 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 
   
-<button id="applyButton" class="midbutton">Ariza Qoldirish</button>
+<button class="applyButton midbutton">Ariza Qoldirish</button>
 
 
 <h1 class="clints">XARIDDAN OLDIINGI<span>QO'RQUV - TABIIY HOL</span></h1>
@@ -620,7 +654,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
 
-<button id="applyButton" class="midbutton">Ariza Qoldirish</button>
+<button class="applyButton midbutton">Ariza Qoldirish</button>
 
 
 <!-- maps -->
@@ -631,7 +665,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 <div class="contact-numbers">
     <p><i class="bi bi-telephone-fill"></i> <a href="tel:+998949739777">+998 94 973 97 77</a></p>
-    <p><i class="bi bi-telephone-fill"></i> <a href="tel:+998781136366">+998 78 113 63 66</a></p>
+    <p><i class="bi bi-telephone-fill"></i> <a href="tel:+998950889777">+998 95 088 97 77</a></p>
 </div>
 
 
@@ -640,7 +674,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <footer>
     <div class="footer-content">
-        <p>© 2023 KOSMOS TJM | All Rights Reserved.</p>
+        <p>© 2024 KOSMOS TJM | All Rights Reserved.</p>
         <p><a href="https://akmirteam.uz">Privacy Policy</a></p>
         <p>This site is not a part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
         <p>© 2024 | <a href="https://akmirteam.uz">AkmirTeam</a></p>
@@ -650,9 +684,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
     <script src="js/timer.js"></script>
     <script src="js/main.js" ></script>
-
+    <script src="js/api.js" ></script>
 
 
 
