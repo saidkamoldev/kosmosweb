@@ -22,12 +22,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    var closeButton = document.querySelector('.video-close-btn');
-    var videoContainer = document.getElementById('videoContainer');
-    var videoFrame = document.getElementById('videoFrame');
-
-    closeButton.addEventListener('click', function() {
-        videoFrame.src = ''; // Video manzilini o'chirish orqali to'xtatish
-        videoContainer.style.display = 'none'; // Videoni yopish
-    });
+    var iframe = document.getElementById('videoFrame');
+    // URLga autoplay va mute parametrlarini qo'shing
+    iframe.src += "&autoplay=1&mute=1";
 });
+
+function closeVideo() {
+    var videoContainer = document.getElementById('videoContainer');
+    videoContainer.style.display = 'none';
+    // Video to'xtatish
+    var iframe = document.getElementById('videoFrame');
+    iframe.src = iframe.src; // Reload the iframe to stop the video
+    
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var iframe = document.getElementById('videoFrame');
+    var src = iframe.getAttribute('src');
+    iframe.setAttribute('src', src + (src.includes('?') ? '&' : '?') + 'autoplay=1&mute=1');
+});
+
+

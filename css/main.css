@@ -1618,7 +1618,7 @@ footer p {
 .video-close-btn {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 25px;
     color: white;
     font-size: 24px;
     cursor: pointer;
@@ -1630,23 +1630,24 @@ footer p {
     .fixed-video-container {
         position: fixed; 
         bottom: 20px; 
-        right: 20px; 
+        right: 0; 
         width: 150px; 
         height: 200px;
         z-index: 1000; 
     
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        /* box-shadow: 0 4px 8px rgba(0,0,0,0.1);  */
         border-radius: 5%;
     }
     
     .video-close-btn {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 5px;
+        left: 25px;
         color: white;
         font-size: 15px;
         cursor: pointer;
         z-index: 1001;
+        
     }
     
 }
