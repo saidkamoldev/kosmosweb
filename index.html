@@ -320,43 +320,57 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="modal-content">
         <span class="close">&times;</span>
         <h1>"Kosmos" turar-joy majmuasidan eksklyuziv narxda o'z kvartirangizga ega bo'lish imkoniyatini qo'ldan boy bermang - orzuyingizdagi uy sizni kutmoqda!</h1>
-        <form>
+        <form id="contactForm">
             <input type="text" placeholder="Ism Sharifingiz" id="name1">
             <input type="tel" placeholder="Telefon Raqamingiz" id="phone_number1" required>
+            <div id="phone-error1" class="error">Noto'g'ri format kiritingiz, iltimos to'g'ri format kiriting.</div>
+            <div id="phone-success1" class="success">To'g'ri format!</div>
             <button type="submit" class="submit-button">Ariza Qoldirish</button>
         </form>
     </div>
 </div>
 
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-    // IntlTelInput sozlash
-    const setupIntlTelInput = (inputId, errorId, successId) => {
-        var input = document.querySelector("#" + inputId);
-        var iti = window.intlTelInput(input, {
-            initialCountry: "uz",
-            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-        });
+<style>
+    .error { color: red; display: none; }
+    .success { color: green; display: none; }
+</style>
 
-        input.addEventListener('input', function() {
-            var phoneError = document.getElementById(errorId);
-            var phoneSuccess = document.getElementById(successId);
-            if (iti.isValidNumber()) {
-                phoneError.style.display = "none";
-                phoneSuccess.style.display = "block";
-            } else {
-                phoneError.style.display = "block";
-                phoneSuccess.style.display = "none";
-            }
-        });
-    };
-
-    setupIntlTelInput("phone_number1", "phone-error1", "phone-success1");
-
-    // Modalni ko'rsatish va yopish
-    var applyButtons = document.querySelectorAll('.applyButton');
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById('modalForm');
     var closeButton = document.querySelector('.close');
+    var applyButtons = document.querySelectorAll('.applyButton');
+    var input = document.querySelector("#phone_number1");
+
+    var iti = window.intlTelInput(input, {
+        initialCountry: "uz",
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+    });
+
+    input.addEventListener('input', function() {
+        var phoneError = document.getElementById("phone-error1");
+        var phoneSuccess = document.getElementById("phone-success1");
+        if (iti.isValidNumber()) {
+            phoneError.style.display = "none";
+            phoneSuccess.style.display = "block";
+        } else {
+            phoneError.style.display = "block";
+            phoneSuccess.style.display = "none";
+        }
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        if (iti.isValidNumber()) {
+            alert("Ariza qabul qilindi!");
+            input.value = "";
+            phoneSuccess.style.display = "none";
+        } else {
+            document.getElementById("phone-error1").style.display = "block";
+        }
+    });
 
     applyButtons.forEach(function(button) {
         button.addEventListener('click', function() {
@@ -374,9 +388,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 });
-
-
-        </script>
+</script>
   
 
 
